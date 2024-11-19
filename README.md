@@ -69,8 +69,10 @@ This project requires Bootstrap and jQuery, which are included via CDN in the HT
 - **Database Integration**: To store user bookings, applications, and preferences.
 ---
 
-## This project was made by Yesdaulet Nazira and Amangeldykyzy Damilya from SE-2327
+## Conclusion
 
 This project demonstrates how a modern website can support engagement and interaction within a student club community. The AITU Music Club website provides club members and potential new members with convenient access to information about the club, event schedules, rehearsal booking, and audition applications. Features like user preference management, responsive design, and interactive elements contribute to a positive user experience.
 
 Developing and deploying this project not only strengthens the club’s online presence but also creates a foundation for future growth. With the potential for an admin panel, notifications, and database integration, this project is flexible and ready to meet the evolving needs of AITU’s growing music community.
+
+## This project was made by Yesdaulet Nazira and Amangeldykyzy Damilya from SE-2327
