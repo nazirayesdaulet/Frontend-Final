@@ -68,11 +68,11 @@ function notification(){
 const loginForm = document.getElementById("login-form");
 const usernameInput = document.getElementById("username");
 const logoutBtn = document.getElementById("logout-btn");
+const userInfo = document.getElementById("user-info");
+const welcomeMessage = document.getElementById("welcome-message");
 
 document.addEventListener("DOMContentLoaded", () => {
   checkAuthStatus();
-  applyTheme();
-  applyFilter();
 });
 
 loginForm.addEventListener("submit", (e) => {
@@ -93,17 +93,16 @@ function checkAuthStatus() {
   const username = localStorage.getItem("username");
   if (username) {
     loginForm.classList.add("hidden");
+    userInfo.classList.remove("hidden");
+    welcomeMessage.textContent = `Welcome, ${username}!`;
     logoutBtn.classList.remove("hidden");
-    preferencesSection.classList.remove("hidden");
-    filterSection.classList.remove("hidden");
   } else {
     loginForm.classList.remove("hidden");
+    userInfo.classList.add("hidden");
+    welcomeMessage.textContent = "";
     logoutBtn.classList.add("hidden");
-    preferencesSection.classList.add("hidden");
-    filterSection.classList.add("hidden");
   }
 }
-
 document.querySelectorAll('.accordion-title').forEach(title => {
     title.addEventListener('click', () => {
         const content = title.nextElementSibling;
